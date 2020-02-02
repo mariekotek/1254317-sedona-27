@@ -17,7 +17,7 @@
 	</nav>
 </header>
 <main>
-	<h1>Отдых в Седоне</h1> <!-- Этот заголовок потом скрыть -->
+	<h1 hidden="true">Отдых в Седоне</h1> 
 	<section class="welcome">
 		<img src="img/welcome.svg" width="459" height="353"  alt="Добро пожаловать в Седону!">
 		<style type="text/css">
@@ -83,7 +83,18 @@
 		<h2>Заинтересовались?</h2>
         	<p>Укажите предполагаемые даты поездки, <br> 
         	   и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        	   <!-- Форма выбора дат поездки -->
+        	   <div>
+        	   	<form action="" method="post">
+        	   		<p>Поиск гостиницы в Седоне</p>
+        	   		<label for="arrival">Дата заезда</label><input type="date" name="arrival-date" id="arrival" value="2017-04-24"></span>
+        	   		<label for="departure">Дата выезда<input type="date" name="departure-date" il="departure" value="2017-06-04"></label>
+        	   		<span>
+        	   			<label for="adult">Взрослые:</label><input type="number" name="adult" id="adult" min="1" value="2">
+        	   			<label for="children">Дети:</label><input type="number" name="children" id="children" min="0" value="0">
+        	   		</span>
+        	   		<input type="submit" name="search" value="Найти">
+        	   	</form>
+        	   </div>
         	<div>
         		<img src="img/map.png" width="1200" height="593" alt="Карта">
         	</div>
