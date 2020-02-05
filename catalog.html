@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <header>
-	<nav>
+	<nav">
 		<ul>
 			<li><a href="">Информация</a></li>
 			<li><a href=""></a>Фото и видео</li>
@@ -21,17 +24,17 @@
 	<section>
 		<h2 hidden="true">Фильтр выбора гостиниц</h2> 
 		<form oninput="result.value="> 
-			<div><label>Инфраструктура:
-				<input type="checkbox" name="pool" checked> Бассейн<br>
-				<input type="checkbox" name="parking"> Парковка<br>
-				<input type="checkbox" name="wi-fi"> Wi-Fi<br>
+		<div><h3>Инфраструктура:</h3>
+				<label><input type="checkbox" name="pool" checked> Бассейн</label><br>
+				<label><input type="checkbox" name="parking"> Парковка</label><br>
+				<label><input type="checkbox" name="wi-fi"> Wi-Fi</label><br>
 			</label></div>		
-			<div><label>Тип жилья:
-				<input type="checkbox" name="hotel" checked> Гостиница<br>
-				<input type="checkbox" name="motel" checked> Мотель<br>
-				<input type="checkbox" name="apartment" checked> Апартаменты
-			</label></div>
-		<div>Стоиость в сутки (Р):
+		<div><h3>Тип жилья:</h3>
+				<label><input type="checkbox" name="hotel" checked> Гостиница</label><br>
+				<label><input type="checkbox" name="motel" checked> Мотель</label><br>
+				<label><input type="checkbox" name="apartment" checked> Апартаменты</label>
+		</div>
+		<div><h3>Стоиость в сутки (Р):</h3>
 			<span class="price">От 0</span> 
 			<span class="price">До 3000</span>
 			<input type="range" name="price" min="0" max="3000" value="2500">
