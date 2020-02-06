@@ -82,10 +82,12 @@ li {
   height: 256px;
 }
 
-.feature-item li:first-child, li:nth-child(2) {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
+ 
+.feature-item li:first-child, 
+.feature-item li:nth-child(2) {  
+  color: #ffffff;  
+  background-color: #81b3d2; 
+} 
 
 .feature-city {
   width: 252px;
@@ -144,6 +146,16 @@ li {
   color: #ffffff;
 }
 
+.search-hotel:hover {
+  background-color: #604e43;
+}
+
+.search-hotel:focus {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+
+}
+
 .search-button {
   width: 458px;
   height: 58px;
@@ -156,8 +168,48 @@ li {
   color: #ffffff;
 }
 
-.by {
-  color: #231f20;
+.search-button:hover {
+  background-color: #669ec0;
+}
+
+.search-button:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.arrival,
+.departure {
+  width: 346px;
+  height: 38px;
+  background-color: #f2f2f2;
+}
+
+.arrival:hover,
+.departure:hover {
+background-color: #ebebeb;
+}
+
+.arrival:focus,
+.departure:focus {
+background-color: #ffffff;
+}
+
+.footer{
+  width: 223px;
+  height: 20px;;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 26px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.footer.visit {
+  width: 136px;
+  height: 16px;
 }
 
 .social-button {
@@ -165,11 +217,92 @@ li {
   background-size: 46px 48px;
 }
   
-.social-button a:hover {
-
+a.social-button:hover,
+a.search-button {
+  background-color: #669ec0;
 }
 
-.social-button a:focus {
-
+a.social-button:focus,
+a.search-button {
+  background-color: #5496bd;
 }
 
+.by {
+  color: #231f20;
+}
+
+.logo-htmla {
+  fill: #231f20;
+}
+
+.academy:hover {
+  fill: #81b3d2;
+}
+
+.academy:focus{
+  fill: #bdbbbc;
+}
+
+
+h3.hotel-name {
+  width: 210px;
+  height: 16px;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+}
+
+.hotel-info {
+  width: 77px;
+  height: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  text-align: left;
+  color: #333333;
+}
+
+.price {
+  width: 66px;
+  height: 11px;
+}
+
+.rate {
+  background-color: #f2f2f2;
+  width: 81px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #666666;
+}
+
+.button-info {
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.button-book {
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+}

@@ -12,7 +12,7 @@
 	<nav class="main-naigation">
 		<ul class="site-navigation">
 			<li><a href="">Информация</a></li>
-			<li><a href=""></a>Фото и видео</li>
+			<li><a href="">Фото и видео</a></li>
 			<li class="current-page"><a href="index.html"><img src="img/logo.svg" width="140" height="71" alt="Логотип  Седона"></a></li>
 			<li><a href=""></a>Карта штата</li>
 			<li><a href="catalog.html">Гостиницы</a></li>
@@ -31,7 +31,7 @@
 	    </div>
 		<div>
 			<ul class="feature-list">
-				<div class="feature-item"><li><h3>Настоящий городок</h3>
+				<div class="feature-item first"><li><h3>Настоящий городок</h3>
 					<span class="feature-number">№1</span>
 					<p>Седона - не аттракцион для туристов, там течёт своя жизнь</p> 
 				</div>
@@ -60,7 +60,7 @@
 				 </div>
 				</li>
 			</div>
-			<div class="feature-item">
+			<div class="feature-item second">
 				<li>
 					<h3>Там есть мост дьявола</h3>
 					<span class="feature-number">№2</span>
@@ -97,9 +97,9 @@
         	   и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         	   <div>
         	   	<form action="" method="post">
-        	   		<p class="search-hotel">Поиск гостиницы в Седоне</p>
-        	   		<label for="arrival">Дата заезда</label><input type="date" name="arrival-date" id="arrival" value="2017-04-24"></span>
-        	   		<label for="departure">Дата выезда<input type="date" name="departure-date" il="departure" value="2017-06-04"></label>
+        	   		<p><button class="search-hotel">Поиск гостиницы в Седоне</button></p>
+        	   		<label for="arrival">Дата заезда</label><input type="date" name="arrival-date" id="arrival" value="2017-04-24" class="arrival"></span>
+        	   		<label for="departure">Дата выезда<input type="date" name="departure-date" il="departure" value="2017-06-04" class="departure"></label>
         	   		<span>
         	   			<label for="adult">Взрослые:</label><input type="number" name="adult" id="adult" min="1" value="2">
         	   			<label for="children">Дети:</label><input type="number" name="children" id="children" min="0" value="0">
@@ -113,10 +113,10 @@
 	</section>
 </main>
 <footer>
-	<div>
-      <a href=""> #visitsedona </a>
+	<div class="footer">
+      <a href="" class="visit">#visitsedona</a><br>
+      Тел: +7(495) 666-02-66
     </div>
-
     <div class="footer-social">
       <ul>
         <li><a class="social-button" href=""><img src="img/tw-icon.svg" width="17" height="15" alt="Twitter"></a></li>
@@ -127,8 +127,8 @@
     <div>
       <p class="by">
         Website by 
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmla.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
+        <a class="academy" href="https://htmlacademy.ru"><img class="logo-htmla" src="img/logo-htmla.svg" width="115" height="41" alt="HTML Academy"></a>
     </div>  
 </footer>
 </body>
