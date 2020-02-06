@@ -194,6 +194,10 @@ background-color: #ebebeb;
 background-color: #ffffff;
 }
 
+.calendar:hover {
+
+}
+
 .footer{
   width: 223px;
   height: 20px;;
@@ -218,31 +222,34 @@ background-color: #ffffff;
 }
   
 a.social-button:hover,
-a.search-button {
+a.search-button:hover {
   background-color: #669ec0;
 }
 
+.social-button-icon:focus {
+  opacity: 0.3;
+}
+
 a.social-button:focus,
-a.search-button {
+a.search-button:focus {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .by {
   color: #231f20;
 }
 
-.logo-htmla {
-  fill: #231f20;
-}
 
 .academy:hover {
   fill: #81b3d2;
 }
 
-.academy:focus{
+.academy:focus {
   fill: #bdbbbc;
 }
 
+/* Index */
 
 .hotel-name {
   width: 210px;
@@ -273,7 +280,6 @@ a.search-button {
   text-align: left;
   color: #333333;
 }
-
 
 .price {
   width: 66px;
