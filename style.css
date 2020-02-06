@@ -244,7 +244,7 @@ a.search-button {
 }
 
 
-h3.hotel-name {
+.hotel-name {
   width: 210px;
   height: 16px;
   font-size: 21px;
@@ -253,6 +253,14 @@ h3.hotel-name {
   line-height: 26px;
   text-align: left;
   color: #000000;
+}
+
+.hotel-name:hover {
+  color: #81b3d2;
+}
+
+.hotel-name:focus {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-info {
@@ -265,6 +273,7 @@ h3.hotel-name {
   text-align: left;
   color: #333333;
 }
+
 
 .price {
   width: 66px;
@@ -295,6 +304,15 @@ h3.hotel-name {
   color: #ffffff;
 }
 
+.button-info:hover {
+  background-color: #669ec0;
+}
+
+.button-info:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-book {
   width: 142px;
   height: 27px;
@@ -305,4 +323,13 @@ h3.hotel-name {
   line-height: 21px;
   text-align: left;
   color: #ffffff;
+}
+
+.button-book:hover {
+  background-color: #604e43;
+}
+
+.button-book:focus {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
