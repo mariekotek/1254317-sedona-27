@@ -299,7 +299,7 @@ background-size: 768px 512px;
   background-image: none; 
   background: transparent;
   background-color: transparent;
-  font-family: PTSans;
+  font-family: "PT Sans";
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -314,7 +314,7 @@ background-size: 768px 512px;
   width: 133px;
   height: 32px;
   background-color: #ffffff;
-  font-family: PTSans;
+  font-family: "PT Sans";
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -346,7 +346,7 @@ background-size: 768px 512px;
 
 a.sort {
   border: none;
-  font-family: PTSans;
+  font-family: "PT Sans";
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
