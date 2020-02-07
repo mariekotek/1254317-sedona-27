@@ -219,18 +219,31 @@ background-color: #ffffff;
 .social-button {
   background-color: #81b3d2;
   background-size: 46px 48px;
+  padding: 10px
 }
+
+/*.twitter {
+  padding: 14.5px 16.5px;
+}
+
+.facebook {
+  padding: 17px 13px;
+}
+
+.youtube {
+  padding: 13px 16px;
+}*/
   
 a.social-button:hover,
 a.search-button:hover {
   background-color: #669ec0;
 }
 
-.social-button-icon:focus {
+a.social-button:focus path{
   opacity: 0.3;
 }
 
-a.social-button:focus,
+a.social-button:focus path,
 a.search-button:focus {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
@@ -241,11 +254,11 @@ a.search-button:focus {
 }
 
 
-.academy:hover {
+a:hover path{
   fill: #81b3d2;
 }
 
-.academy:focus {
+a:focus path {
   fill: #bdbbbc;
 }
 
