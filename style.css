@@ -35,6 +35,9 @@ a {
 .site-navigation a:focus {
   color: #bdbbbc;
 }
+a.current-page {
+  color: #766357;
+}
 
 li {
   list-style: none;
@@ -241,9 +244,9 @@ a.search-button:hover {
 
 a.social-button:focus path{
   opacity: 0.3;
+  background-color: #5496bd;
 }
 
-a.social-button:focus path,
 a.search-button:focus {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
@@ -254,15 +257,121 @@ a.search-button:focus {
 }
 
 
-a:hover path{
+a.academy-button:hover path{
   fill: #81b3d2;
 }
 
-a:focus path {
+a.academy-button:focus path {
   fill: #bdbbbc;
 }
 
 /* Index */
+
+h3.filter {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+}
+
+section.filter-form {
+background-image: URL("img/background.png");
+background-repeat: no-repeat;
+background-size: 768px 512px;
+} 
+
+.filter {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.button-show {
+  width: 133px;
+  height: 32px;
+  border: solid 2px #ffffff;
+  background-image: none; 
+  background: transparent;
+  background-color: transparent;
+  font-family: PTSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button-show:hover {
+  width: 133px;
+  height: 32px;
+  background-color: #ffffff;
+  font-family: PTSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.found {
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 26px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.sort {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+a.sort {
+  border: none;
+  font-family: PTSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal; 
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration-line: underline;
+  }
+
+a.sort:hover {
+  color: #81b3d2;
+  text-decoration-line: underline;
+}
+
+a.sort:focus {
+  color: #000000;
+  text-decoration-line: underline;
+}
+
+a.sort:active {
+  color: #81b3d2;
+  text-decoration-line: none;
+}
 
 .hotel-name {
   width: 210px;

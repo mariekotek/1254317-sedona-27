@@ -21,33 +21,35 @@
 </header>
 <main>
 	<h1 hidden="true">Гостиницы Седоны</h1> 
-	<section>
+	<section class="filter-form">
 		<h2 hidden="true">Фильтр выбора гостиниц</h2> 
 		<form oninput="result.value="> 
-		<div><h3>Инфраструктура:</h3>
-				<label><input type="checkbox" name="pool" checked> Бассейн</label><br>
-				<label><input type="checkbox" name="parking"> Парковка</label><br>
-				<label><input type="checkbox" name="wi-fi"> Wi-Fi</label><br>
-			</label></div>		
-		<div><h3>Тип жилья:</h3>
-				<label><input type="checkbox" name="hotel" checked> Гостиница</label><br>
-				<label><input type="checkbox" name="motel" checked> Мотель</label><br>
-				<label><input type="checkbox" name="apartment" checked> Апартаменты</label>
+		<div><h3 class="filter">Инфраструктура:</h3>
+				<label class="filter"><input type="checkbox" name="pool" checked> Бассейн</label><br>
+				<label class="filter"><input type="checkbox" name="parking"> Парковка</label><br>
+				<label class="filter"class="filter"><input type="checkbox" name="wi-fi"> Wi-Fi</label><br>
+			</label>
+		</div>		
+		<div><h3 class="filter">Тип жилья:</h3>
+				<label class="filter"><input type="checkbox" name="hotel" checked> Гостиница</label><br>
+				<label class="filter"><input type="checkbox" name="motel" checked> Мотель</label><br>
+				<label class="filter"><input type="checkbox" name="apartment" checked> Апартаменты
+				</label>
 		</div>
-		<div><h3>Стоиость в сутки (Р):</h3>
-			<span class="price">От 0</span> 
-			<span class="price">До 3000</span>
+		<div><h3 class="filter">Стоиость в сутки (Р):</h3>
+			<span class="filter">От 0</span> 
+			<span class="filter">До 3000</span>
 			<input type="range" name="price" min="0" max="3000" value="2500">
 		</div>
-		<span><input type="submit" name="result" value="Показать"></span>
+		<span><input class="button-show" type="submit" name="result" value="Показать"></span>
 	</section>
 	<section>
-		<span>Найдено: <output>3</output> </span>
-		<span>Сортировка:</span> 
+		<div class="found">Найдено: <output>3</output> </div>
+		<span class="sort">Сортировка:</span> 
 		<ul>
-			<li><button class="current-sort">по цене</button></li> 
-			<li><button>по типу</button></li> 
-			<li><button>по рейтингу</button></li>
+			<li><a class="sort" href="">по цене</a></li> 
+			<li><a class="sort" href="">по типу</a></li> 
+			<li><a class="sort" href="">по рейтингу</a></li>
 		</ul>
 		<span>
 			<button><img src="img/icon-up-dir.svg" width="11" height="10" alt="up"></button>
