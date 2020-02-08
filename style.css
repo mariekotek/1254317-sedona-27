@@ -26,6 +26,12 @@ a {
   line-height: 26px; 
   color: #000000;
   background-color: #;
+  margin: o auto;
+}
+
+.site-naigation {
+  flex-direction: column;
+  justify-content: center;
 }
 
 .site-navigation a:hover {
@@ -54,6 +60,7 @@ li {
   center; 
   width: 1200px;
   height: 733px;
+  margin: 0 auto;
 }
 
 .main-intro {
@@ -76,8 +83,8 @@ li {
   line-height: 21px;
   text-align: center;
   color: #000000;
-  display: flex;
-  flex-direction: column;
+  min-height: 256px;
+  background-color: #eeeeee;
 }
 
 .feature-image {
@@ -86,23 +93,24 @@ li {
 }
 
  
-.feature-item li:first-child, 
-.feature-item li:nth-child(2) {  
+.feature-item.column {  
   color: #ffffff;  
-  background-color: #81b3d2; 
+  background-color: #81b3d2;
 } 
+
+.container-feature-city {
+  display: flex;
+  flex-direction: row;
+}
 
 .feature-city {
   width: 252px;
-  height: 34px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   line-height: 21px;
   text-align: center;
   color: #333333;
-  display: flex;
-  flex-direction: row;
 }
 
 .feature-city-title {
@@ -299,7 +307,7 @@ background-size: 768px 512px;
   background-image: none; 
   background: transparent;
   background-color: transparent;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -314,7 +322,7 @@ background-size: 768px 512px;
   width: 133px;
   height: 32px;
   background-color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -346,7 +354,7 @@ background-size: 768px 512px;
 
 a.sort {
   border: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
@@ -393,8 +401,6 @@ a.sort:active {
 }
 
 .hotel-info {
-  width: 77px;
-  height: 12px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -460,4 +466,42 @@ a.sort:active {
 .button-book:focus {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* СЕТКИ */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-column {
+   display: flex;
+  flex-direction: column;
+}
+
+.column {
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.column-img {
+  flex-grow: 2;
+}
+
+.feature-city {
+  flex-grow: 1;
+}
+
+div.feature-item  {
+  flex-grow: 1;
+}
+
+.wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
