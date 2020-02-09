@@ -470,22 +470,17 @@ a.sort:active {
 /* СЕТКИ */
 
 .features,
-.advantages {
+.advantages,
+.hotel {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: stretch;
 }
 
 .features-intro {
   display: flex;
   flex-direction: column;
-}
-
-.features,
-.advantages {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .features-column-text,
@@ -497,6 +492,16 @@ a.sort:active {
 
 .features-column-img {
   flex-grow: 2;
+}
+
+.hotel {
+  flex-wrap: wrap;
+}
+
+.hotel-column-info,
+.hotel-column-img,
+.hotel-column-rate; {
+  flex-grow: 1;
 }
 
 .wrapper {
