@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -74,6 +74,12 @@ li {
   color: #000000;
 }
 
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+
 .feature-item {
   width: 400px;
   height: 256px;
@@ -86,25 +92,19 @@ li {
   min-height: 256px;
   background-color: #eeeeee;
 }
-
-.feature-image {
-  width: 800px;
-  height: 256px;
-}
-
  
-.feature-item.column {  
+.features-column-text {  
   color: #ffffff;  
   background-color: #81b3d2;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: normal;
+  text-align: center;
 } 
 
-.container-feature-city {
-  display: flex;
-  flex-direction: row;
-}
-
-.feature-city {
-  width: 252px;
+.advantages-column {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -114,8 +114,6 @@ li {
 }
 
 .feature-city-title {
-  width: 67px;
-  height: 19px;
   font-size: 21px;
   font-weight: bold;
   font-style: normal;
@@ -124,7 +122,7 @@ li {
   color: #000000;
 }
 
-.feature-number h3 {
+.feature-number {
   font-size: 21px;
   line-height: 21px;
 }
@@ -471,31 +469,34 @@ a.sort:active {
 
 /* СЕТКИ */
 
-.container {
+.features,
+.advantages {
   display: flex;
   justify-content: center;
+  align-items: stretch;
 }
 
-.container-column {
-   display: flex;
+.features-intro {
+  display: flex;
   flex-direction: column;
 }
 
-.column {
+.features,
+.advantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.features-column-text,
+.adantages-column {
+  text-align: center;
   flex-grow: 1;
   flex-basis: auto;
 }
 
-.column-img {
+.features-column-img {
   flex-grow: 2;
-}
-
-.feature-city {
-  flex-grow: 1;
-}
-
-div.feature-item  {
-  flex-grow: 1;
 }
 
 .wrapper {
