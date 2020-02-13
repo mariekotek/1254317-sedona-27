@@ -10,16 +10,16 @@
   <body>
 <header>
 	<section>
-		<nav class="main-navigation">
+		<nav>
 			<div class="main-navigation-wrapper">
 				<ul class="site-navigation">
-				<li><a href="">Информация</a></li>
-				<li><a href="">Фото и видео</a></li>
-				<li><a class="logo" href="index.html"><img src="img/logo.svg" width="140" height="71" alt="Логотип  Седона"></a></li>
-				<li><a href=""></a>Карта штата</li>
-				<li><a href="catalog.html">Гостиницы</a></li>
+					<li class="main-navigation"><a href="">Информация</a></li>
+					<li class="main-navigation"><a href="">Фото и видео</a></li>
+					<li class="main-navigation"><a href="">Карта штата</a></li>
+					<li class="main-navigation"><a href="catalog.html">Гостиницы</a></li>
 				</ul>
 			</div>
+			<a class="main-navigation-logo logo" href="index.html"><img src="img/logo.svg" width="140" height="71" alt="Логотип  Седона"></a>
 		</nav>
 	</section>
 </header>
@@ -27,13 +27,13 @@
 	<section class="welcome">
 		<h1 hidden="true">Отдых в Седоне</h1> 
 	</section>
-	<section class="features-intro feature-column wrapper">
+	<section class="features-intro intro">
 		<div class="main-intro">
 				Седона - небольшой городок в Аризоне,<br>
 				заслуживающий большего!
 				<h2 hidden="true">Преимущества</h2>
 		</div>
-		<div class="features-intro">
+		<div class="features-intro-text">
 		Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
 		</div>
 	</section>
@@ -96,8 +96,9 @@
         		<p class="indicate">Укажите предполагаемые даты поездки, <br> 
         	   и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         	   <div>
-        	   	<form action="" method="post">
-        	   		<p><button class="search-hotel">Поиск гостиницы в Седоне</button></p>
+        	   	<form class="search-form" action="" method="post">
+        	   		<p class="search-hotel">Поиск гостиницы в Седоне</p>
+        	 		<div class="search-form">
         	   		<label for="arrival">Дата заезда</label><input type="date" name="arrival-date" id="arrival" value="2017-04-24" class="arrival">
 					<div class="calendar">
         	   			<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -116,6 +117,7 @@
         	   			<label for="children">Дети:</label><input type="number" name="children" id="children" min="0" value="0">
         	   		</span>
         	   		<input class="search-button" type="submit" name="search" value="Найти">
+        	   	</div>
         	   	</form>
         	   </div>
         				<div>
