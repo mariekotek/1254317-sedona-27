@@ -52,12 +52,15 @@ ul.site-navigation li {
   list-style: none;
 }
 
+.right {
+  text-align: right;
+}
+
 .logo {
   width: 140px;
   height: 71px;
   order: 2;
   object-fit: contain;
-
 }
 
 .main-navigation-logo {
@@ -91,6 +94,7 @@ a.current-page {
   width: 1200px;
   min-height: 733px;
   margin: 0 auto;
+  margin-bottom: -2px;
   padding: 0;
 }
 
@@ -221,12 +225,14 @@ h3 {
 .search-button {
   width: 458px;
   height: 58px;
+  font-family: inherit;
   background-color: #81b3d2;
   font-size: 21px;
   font-weight: bold;
   font-style: normal;
   line-height: 26px;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -276,27 +282,31 @@ background-color: #ffffff;
   height: 16px;
 }
 
+.social {
+  list-style: none;
+  display: inline-block;
+}
+
 .social-button {
   background-color: #81b3d2;
   background-size: 46px 48px;
-  padding: 10px;
+  height: 48px;
+  width: 46px;
+  display: inline-block;
+  margin: auto;
 }
 
-li.social {
-  list-style: none;
+.twitter svg {
+  margin: 15px auto;
 }
 
-/*.twitter {
-  padding: 14.5px 16.5px;
+.facebook svg {
+  margin: 12px auto;
 }
 
-.facebook {
-  padding: 17px 13px;
+.youtube svg {
+  margin: 15px auto;
 }
-
-.youtube {
-  padding: 13px 16px;
-}*/
   
 a.social-button:hover,
 a.search-button:hover {
@@ -498,8 +508,9 @@ a.sort:active {
   font-weight: bold;
   font-style: normal;
   line-height: 21px;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
+  padding: 5px 15px;
 }
 
 .button-info:hover {
@@ -519,8 +530,9 @@ a.sort:active {
   font-weight: bold;
   font-style: normal;
   line-height: 21px;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
+  padding: 5px 15px;
 }
 
 .button-book:hover {
@@ -544,7 +556,7 @@ a.sort:active {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
 }
 
 .features-intro {
