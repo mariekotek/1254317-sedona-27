@@ -926,6 +926,26 @@ a.sort:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.stars {
+  height: 25px;
+  background-image: URL("img/star.svg");
+  background-repeat: repeat-x;
+}
+
+.two {
+ width: 35px;
+}
+
+.three {
+  width: 55px;
+
+}
+
+.four {
+  width: 72px;
+
+}
+
 
 /* СЕТКИ */
 
