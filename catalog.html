@@ -13,10 +13,10 @@
     <nav>
       <div class="main-navigation-wrapper">
         <ul class="site-navigation">
-          <li class="main-navigation"><a href="">Информация</a></li>
-          <li class="main-navigation"><a href="">Фото и видео</a></li>
-          <li class="main-navigation"><a href="">Карта штата</a></li>
-          <li class="main-navigation"><a href="catalog.html">Гостиницы</a></li>
+          <li class="main-navigation"><a href="#">Информация</a></li>
+          <li class="main-navigation"><a href="#">Фото и видео</a></li>
+          <li class="main-navigation"><a href="#">Карта штата</a></li>
+          <li class="main-navigation"><a class="current-page" href="catalog.html">Гостиницы</a></li>
         </ul>
       </div>
       <a class="main-navigation-logo" href="index.html"><img src="img/logo.svg" width="140" height="71" alt="Логотип  Седона"></a>
@@ -25,7 +25,6 @@
 </header>
 <main>
 	<h1 hidden="true">Гостиницы Седоны</h1> 
-	
   <section class="hotel-filter">
 		<h2 hidden="true">Фильтр выбора гостиниц</h2> 
 		<form oninput="result.value=" class="filter-form"> 
@@ -33,7 +32,7 @@
       <h3 class="filter-title">Инфраструктура:</h3>
 				<label class="filter"><input class="filter visually-hidden" type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>Бассейн</label>
 				<label class="filter"><input class="filter visually-hidden" type="checkbox" name="parking"><span class="checkbox-indicator"></span>Парковка</label>
-				<label class="filter"class="filter"><input class="filter visually-hidden" type="checkbox" name="wi-fi"><span class="checkbox-indicator"></span>Wi-Fi</label>
+				<label class="filter"><input class="filter visually-hidden" type="checkbox" name="wi-fi"><span class="checkbox-indicator"></span>Wi-Fi</label>
 			</label>
 		</div>		
 		<div class="hotel-type">
@@ -62,15 +61,15 @@
 	<section class="hotel-found">
 		<div class="found">Найдено: <output>3</output></div>
 		<div class="sort"><span class="sort-title">Сортировка:</span>
-		<ul class="sort-list">
-			<li><a class="sort" href="">по цене</a></li> 
-			<li><a class="sort" href="">по типу</a></li> 
-			<li><a class="sort" href="">по рейтингу</a></li>
-		</ul>
+		  <ul class="sort-list">
+			 <li><a class="sort active" href="">по цене</a></li> 
+			 <li><a class="sort" href="">по типу</a></li> 
+			 <li><a class="sort" href="">по рейтингу</a></li>
+		  </ul>
     </div>
 		<div class="arrow">
 			<span class="arrow-up"></span>
-			<span class="arrow-down"></span>
+			<span class="arrow-down active"></span>
 		</div></form>
 	</section>
   <section class="hotel">   
@@ -79,12 +78,12 @@
         <img src="img/hotel-picture.png" width="135" height="90" alt="Amara Resort & SPA">
     </div>
     <div class="hotel-column-info">
-      <h3><a href="" class="hotel-name">Amara resort & SPA</a></h3>
-                 <p class="hotel-info">
+      <h3><a href="#" class="hotel-name">Amara resort & SPA</a></h3>
+                  <p class="hotel-info">
             	     <span>Гостиница</span>
                     <span class="price">От 4000 р.</span>
                   </p>
-           	       <a class="button-info"  href="">Подробнее</a>
+           	      <a class="button-info"  href="">Подробнее</a>
                   <a class="button-book" href="">Забронировать</a>
     </div>
     <div class="hotel-column-rate">
@@ -97,7 +96,7 @@
              <img src="img/hotel-picture_2.png" width="135" height="90" alt="Desert Quail Inn">
     </div>
     <div class="hotel-column-info">
-              <h3><a href="" class="hotel-name">Desert Quail Inn</a></h3>
+              <h3><a href="#" class="hotel-name">Desert Quail Inn</a></h3>
               <p class="hotel-info">
               <span>Мотель</span>
               <span class="price">От 3000 р.</span>
@@ -115,7 +114,7 @@
              <img src="img/hotel-picture_3.png" width="135" height="90" alt="Villas at Poco Diablo">
     </div>
     <div class="hotel-column-info">
-              <h3><a href="" class="hotel-name">Villas at Poco Diablo</a></h3>
+              <h3><a href="#" class="hotel-name">Villas at Poco Diablo</a></h3>
               <p class="hotel-info">
             	<span>Апартаменты</span>
                 <span class="price">От 2000 р.</span>
