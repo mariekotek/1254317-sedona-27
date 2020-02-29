@@ -306,12 +306,10 @@ h3 {
   }
 }
 
-.form-show {
-  display: block;
-  animation: float 0.6s;
-}
-
 .search-form {
+  position: fixed;
+  display: none;
+
   width: 568px;
   min-height: 395px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -328,6 +326,11 @@ h3 {
   text-align: center;
   vertical-align: middle;
   color: #000000;
+}
+
+.form-show {
+  display: block;
+  animation: float 0.6s;
 }
 
 .search-form-flex p:first-child {
