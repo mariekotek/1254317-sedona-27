@@ -111,6 +111,7 @@ a {
   url(img/polygon.png),
   url(img/welcome.png), 
   url(img/background-photo.png);
+  background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: -1px 451.5px,
   370px 77px,
@@ -146,7 +147,7 @@ a {
   color: #333333;
 }
 
-h3 {
+.heading {
   font-size: 21px;
   font-weight: bold;
 }
@@ -299,7 +300,7 @@ h3 {
 }
 
 .search-form {
-  display: none;
+  display: block;
   position: absolute;
   left: 316px;
 
@@ -319,13 +320,12 @@ h3 {
   text-align: center;
   vertical-align: middle;
   color: #000000;
-
+  animation: float 0.6s;
   z-index: 50;
 }
 
 .form-show {
-  display: block;
-  animation: float 0.6s;
+  display: none;
 }
 
 .search-form-flex p:first-child {
@@ -404,11 +404,6 @@ h3 {
   width: 458px;
   min-height: 38px;
 }
-
-/*.number label {
-  margin-right: 41px;
-  margin-left: 53px;
-}*/
 
 .search-hotel-button {
   width: 568px;
@@ -578,6 +573,8 @@ background-color: #ffffff;
   width: 1200px;
   min-height: 120px;
   box-sizing: border-box;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
   z-index: 40;
 }
@@ -585,6 +582,8 @@ background-color: #ffffff;
 .footer-index{
   position: absolute;
   bottom: 0;
+
+  z-index: 40;
 }
 
 .contact-us {
@@ -592,7 +591,8 @@ background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 
 .hashtag {
@@ -668,6 +668,7 @@ a.search-button:focus {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   width: 25%;
   margin: 0 auto;
@@ -798,7 +799,8 @@ a.academy-button:focus path {
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden,
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -994,7 +996,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
   text-decoration: none;
   display: inline-block;
-  vertical-align: top;
   margin-left: 49px;
   margin-top: 12px;
 }
@@ -1008,7 +1009,6 @@ input[type="radio"].visually-hidden {
 .sort-list li {
   list-style: none;
   display: inline-block;
-  vertical-align: top;
 
   padding-left: 0px;
 }
@@ -1214,6 +1214,7 @@ span.active {
 .stars {
   height: 17px;
   background-image: URL("img/star.svg");
+  background-color: transparent;
   background-repeat: space;
   background-size: 18px;
 
@@ -1243,6 +1244,7 @@ span.active {
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .advantages,
