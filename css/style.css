@@ -362,6 +362,11 @@ a {
   margin-top: 0;
 }
 
+::-ms-clear {
+  width : 0;
+  height: 0;
+}
+
 .date {
   width: 346px;
   height: 38px;
