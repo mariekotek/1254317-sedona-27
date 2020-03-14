@@ -5,6 +5,10 @@ var form = popup.querySelector("form");
 var arrival = popup.querySelector(".arrival");
 var departure = popup.querySelector(".departure");
 
+var minus = popup.querySelector(".btn-minus");
+var plus = popup.querySelector(".btn-plus");
+var number = popup.querySelector(".number-of");
+
 var isStorageSupport = true;
 var storage = "";
 
@@ -14,9 +18,11 @@ try {
     isStorageSupport = false;
   }
 
+popup.classList.add("form-hide");
+
 button.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	popup.classList.toggle("form-show");
+	popup.classList.toggle("form-hide");
   if (storage) {
       arrival.value = storage;
       departure.focus();
@@ -40,8 +46,8 @@ form.addEventListener("submit", function (evt) {
  window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (popup.classList.contains("form-show")) {
-        popup.classList.remove("form-show");
+      if (popup.classList.contains("form-hide")) {
+        popup.classList.remove("form-hide");
       }
     }
   });

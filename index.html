@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/min-normalize.css" rel="stylesheet">
-    <link href="min-style.css" rel="stylesheet">
+    <link href="css/min-style.css" rel="stylesheet">
   </head>
   <body>
 <header>
@@ -13,7 +13,7 @@
 		<nav>
 			<div class="main-navigation-wrapper">
 				<ul class="site-navigation">
-					<li class="main-navigation"><a href="#">Информация</a></li>
+					<li class="main-navigation"><a href="index.html">Информация</a></li>
 					<li class="main-navigation"><a href="#">Фото и видео</a></li>
 					<li class="main-navigation"><a href="#">Карта штата</a></li>
 					<li class="main-navigation"><a href="catalog.html">Гостиницы</a></li>
@@ -29,63 +29,65 @@
 	</section>
 	<section class="features-intro intro">
 		<div class="main-intro">
-				Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
+				Седона — небольшой городок в Аризоне, заслуживающий большего!
 				<h2 class="visually-hidden">Преимущества</h2>
 		</div>
 		<div class="features-intro-text">
 		Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
 		</div>
 	</section>
-	<section class="features">
+	<section>
+	<div class="features">
 		<div class="features-column-text">
-			<h3 class="heading">Настоящий<br>городок</h3>
+			<h3 class="heading feature-head">Настоящий городок</h3>
 			<span>&#8211; №1 &#8211;</span>
-			<p class="features-description">Седона — не аттракцион для туристов,<br>там течёт своя жизнь</p> 
+			<p class="features-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p> 
 		</div>
 		<div class="features-column-img">
 			<img class="feature-image" src="img/feature-picture.png" width="800" height="256" alt="Город Седона">
 		</div>
-	</section>
-	<section class="advantages">
+	</div>
+	<div class="advantages">
 		<div class="adantages-column house">
 			<h4 class="advantages-title">Жильё</h4>
-			<p class="advantages-text">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+			<p class="advantages-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 		</div>
 		<div class="adantages-column food">
 			<h4 class="advantages-title">Еда</h4>
-			<p class="advantages-text">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+			<p class="advantages-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 		</div>
 		<div class="adantages-column present">
 			<h4 class="advantages-title souvenirs">Сувениры</h4>
-			<p class="advantages-text">Не только китайского, но и местного <br> производства!</p>
+			<p class="advantages-text">Не только китайского, но и местного производства!</p>
 		</div>
-	</section>
-	<section class="features">		
+	</div>
+	<div class="features">		
 		<div class="features-column-img">
 			<img src="img/layer-5.png" width="800" height="256" alt="Мост дьявола">
 		</div>
 		<div class="features-column-text">
-			<h3 class="heading">Там есть<br>мост дьявола</h3>
+			<h3 class="heading feature-head">Там есть<br>мост дьявола</h3>
 			<span>&#8211; №2 &#8211;</span>
-			<p class="features-description">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+			<p class="features-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 		</div>
-	</section>
-	<section class="advantages">
+	</div>
+	<div class="advantages">
 			<div class="advantages-column advantage">
-				<h3 class="heading">Небольшая<br>площадь</h3>
+				<h3 class="heading feature-head">Небольшая площадь</h3>
 				<span>&#8211; №3 &#8211;</span>
-				<p class="features-description">Все достопримечательности<br>находятся очень близко</p>
+				<p class="advantage-description">Все достопримечательности находятся очень близко</p>
 			</div>
 			<div class="advantages-column advantage">
-				<h3 class="heading">Красивая<br>дорога</h3>
+				<h3 class="heading feature-head">Красивая дорога</h3>
 				<span>&#8211; №4 &#8211;</span>
-				<p class="features-description">Ехать в Седону из Вегаса совсем<br>не скучно!</p>
+				<p class="advantage-description">Ехать в Седону из Вегаса совсем не скучно!</p>
 			</div>
 			<div class="advantages-column advantage">
-				<h3 class="heading">Мало<br>туристов</h3>
+				<h3 class="heading feature-head">Мало туристов</h3>
 				<span>&#8211; №5 &#8211;</span>
-				<p class="features-description">Большинство едет в Гранд Каньон<br>и толпится там</p>
+				<p class="advantage-description">Большинство едет в Гранд Каньон и толпится там</p>
 			</div>
+	</div>
 	</section>
 	<section class="contact">
 				<h2 class="interested">Заинтересовались?</h2>
@@ -97,17 +99,17 @@
         <div class="search-form">
         	<form class="search-form-flex" action="https://echo.htmlacademy.ru/" method="post">
         	   	<p>
-        	   		<label for="arrival">Дата заезда</label><input class="date arrival" type="text" name="arrival-date" id="arrival" value="24 АПРЕЛЯ 2017">
+        	   		<label for="arrival">Дата заезда<input class="date arrival" type="text" name="arrival-date" id="arrival" value="24 АПРЕЛЯ 2017"></label>
 				</p>	
         	   	<p>
         	   		<label for="departure">Дата выезда<input class="date departure" type="text" name="departure-date" id="departure" value="4 ИЮЛЯ 2017"></label>
         	 	</p>
         	   	<div class="number">
         	   		<div class="adult">
-        	   			<label for="adult">Взрослые:</label><div class="btn-minus"></div><input class="adults" type="number" name="adult" id="adult" min="1" value="2"><div class="btn-plus"></div>
+        	   			<label for="adult">Взрослые:</label><div class="btn-minus"></div><input class="number-of adults" type="text" name="adult" id="adult" min="1" value="2"><div class="btn-plus"></div>
         	   		</div>
         	   		<div class="children">
-        	   			<label for="children">Дети:</label><div class="btn-minus"></div><input type="number" name="children" id="children" min="0" value="0"><div class="btn-plus"></div>
+        	   			<label for="children">Дети:</label><div class="btn-minus"></div><input class="number-of childrens" type="text" name="children" id="children" min="0" value="0"><div class="btn-plus"></div>
         	   		</div>
         	   	</div>
         	   	<div>
@@ -121,7 +123,7 @@
 	<footer class="footer-index">
 		<section class="footer">
 			<div class="contact-us">
-      			<div class="hashtag"><a href="" class="visit">#visitsedona</a></div>
+      			<div class="hashtag"><a href="#" class="visit">#visitsedona</a></div>
       			<div class="phone-number"><p>Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a></p></div>
     		</div>
    			<div class="footer-social">
